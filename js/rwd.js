@@ -3,9 +3,9 @@
  * Custom Javascript for the RWD menu behavior.
  */
 
-(function (Drupal, $) {
+'use strict';
 
-  'use strict';
+(function (Drupal, $) {
 
   Drupal.behaviors.rwdElements = {
     attach: function (context, settings) {
@@ -20,7 +20,7 @@
             $('.region-header nav.navigation>ul.menu').attr('id', 'block-mainMenu');
             $('.region-header nav.navigation').attr('id', 'nav-desktop-main-menu');
             // Move the main menu together with its children.
-            $('#block-mainMenu').appendTo('#sliding-panel .region-sliding-menu');
+            $('#block-mainMenu').appendTo('#sliding-panel .region-sliding-panel');
           } else {
             // Move back the lists into the desktop positions.
             $('#block-mainMenu').appendTo('#nav-desktop-main-menu');

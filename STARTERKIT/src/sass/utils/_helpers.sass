@@ -4,30 +4,6 @@
 /// @group helpers
 ////
 
-/// Buttons.
-%buttons
-  border: 1px solid transparent
-  border-radius: 2px
-  color: $white
-  font-size: calc-rem(16px)
-  font-weight: bold
-  padding: calc-rem(12px) calc-rem(38px)
-  text-transform: uppercase
-
-/// Simple list.
-.simple-list
-  margin: 0
-  padding: 0
-
-  li
-    list-style-image: none
-    list-style-type: none
-
-/// Add content in to grid.
-.restricted-container
-  margin: 0 auto
-  max-width: $container-width
-
 /// Hide element.
 .hide-element
   visibility: hidden
@@ -37,16 +13,6 @@
   color: transparent
   font-size: 0
   line-height: 0
-
-/// Visible from medium.
-.hide-rwd-mobile
-  +breakpoint(0 $bellow-medium)
-    display: none
-
-/// Visible from large.
-.hide-rwd-large
-  +breakpoint(0 $bellow-large)
-    display: none
 
 .pulse
   animation-name: pulse

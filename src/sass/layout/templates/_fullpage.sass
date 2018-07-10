@@ -1,6 +1,5 @@
-.panel-fullpage
-  .section
-    padding: ($container-padding * 2) $container-padding
-
-    > *
-      @extend .restricted-container
+// Custom layout - Full page sections
+.custom-fullpage
+  > .section
+    +full-content
+    overflow: hidden

@@ -44,16 +44,6 @@
     $map: map-get($map, $key)
   @return $map
 
-/// Set icon from $icons map
-/// @access public
-/// @param {Number} $icon - Icon to set
-/// @return {}
-
-@function seticon($icon)
-  @if not map-has-key($icons, $icon)
-    @warn 'No icon found for `#{$icon}` in $icons map. Property omitted.'
-  @return map-get($icons, $icon)
-
 /// Set layer from $layer map
 /// @access public
 /// @param {Number} $layer - Layer to get

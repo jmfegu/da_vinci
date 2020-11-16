@@ -45,21 +45,3 @@ body
     > *:not(:last-child)
       +breakpoint(0 point(x-lg) - 1)
         margin-bottom: 1rem
-
-    .layout-content
-      +breakpoint(point(x-lg))
-        flex-grow: 1
-        width: 50%
-
-    aside
-      +breakpoint(point(x-lg))
-        width: 33%
-
-      &.layout-sidebar-first
-        +breakpoint(point(x-lg))
-          margin-right: 2.2%
-          order: -1
-
-      &.layout-sidebar-second
-        +breakpoint(point(x-lg))
-          margin-left: 2.2%
